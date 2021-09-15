@@ -199,7 +199,6 @@ int32_t getDistance(VL53L1_Dev_t *dev) {
 
 uint8_t getDistanceStatus(VL53L1_Dev_t *dev) {
   uint8_t current_distance = pRangingMeasurementData->RangeStatus;
-  current_distance = pRangingMeasurementData->RangeMilliMeter;
   return current_distance;
 }
 
